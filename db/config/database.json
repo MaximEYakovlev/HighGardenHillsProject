@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "danil",
+    "password": 111,
+    "database": "hgh",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "tau",
+    "password": null,
+    "database": "wine",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "tau",
+    "password": null,
+    "database": "wine",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

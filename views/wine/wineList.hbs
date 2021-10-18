@@ -1,0 +1,64 @@
+<link rel='stylesheet' href='/stylesheet/index.css' type='text/css' />
+<div class='container'>
+
+  <div class='tablicka'>
+
+    <h3> <a class='nav-link' href='/wine'> {{wine.name}} </a></h3>
+    <div class='row row-cols-1 row-cols-md-5 g-4'>
+
+      <div class='col'>
+        <br />
+        <div class='card-wine'>
+          <div height='200px'>
+            <img src={{wine.sweet}} class='card-img-top' alt='...' />
+          </div>
+          <div class='card-body'>
+            <h5 class='card-title'>
+              <p>Цвет: {{wine.color}}</p>
+              <p>Страна производства: {{wine.country}}</p>
+              <p>Тип: {{wine.type}}</p>
+              <p>Год производства: {{wine.year}}</p>
+            </h5>
+
+          </div>
+        </div>
+      </div>
+
+      {{#if user}}
+        <div
+          class='card-wine col row row-cols-1 row-cols-md-5 g-4'
+          style='    margin-left: 450;
+     margin-top: 51px;'
+        >
+
+          <form name='rateForm' action='/rating' method='POST'>
+            <label for='rating' style='color:white ;width:1000px'>Поставьте свою
+              оценку от 1 до 5</label>
+            <input
+              name='rating'
+              style='margin-top: 6px'
+              type='text'
+              placeholder='поставьте свою оценку'
+            />
+            <input
+              name='feedback'
+              style='margin-top: 6px'
+              type='text'
+              placeholder='оставьте свой отзыв'
+            />
+            <div class='col-12'>
+              <button
+                class='btn btn-primary'
+                type='submit'
+                style='width: 175;    background: #761607; border-color:#fff;border-width: 3px;margin-top: 6px'
+              >Оставить отзыв</button>
+            </div>
+          </form>
+        </div>
+      {{/if}}
+
+    </div>
+
+  </div>
+
+</div>

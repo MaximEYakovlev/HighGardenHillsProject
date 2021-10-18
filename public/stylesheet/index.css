@@ -1,0 +1,54 @@
+.tablicka {
+  border-radius: 60px 60px 60px 60px;
+  background: linear-gradient(180deg, rgb(217 195 155 / 34%), #00000000);
+  height: 500px;
+  border-top: groove;
+  border-color: #86131e;
+  padding: 5%;
+}
+
+.container {
+  padding-top: 17px;
+  background-color: 'none';
+  border-radius: 6%;
+}
+h3 {
+  position: absolute;
+  z-index: 2;
+  margin-top: -6%;
+  font-size: 40px;
+}
+.card {
+  background: linear-gradient(180deg, rgb(217 195 155 / 34%), #00000000);
+
+  width: 230px;
+  height: 230px;
+}
+.card-wine {
+  background: linear-gradient(180deg, rgb(124 20 6), #0000009e);
+
+  width: 400px;
+}
+.nav-link {
+  color: white;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: white;
+}
+.card-text {
+  color: #000;
+  font-weight: 600;
+}
+.card-title {
+  font-weight: 600;
+
+  color: rgb(255, 255, 255);
+}
+.card {
+  background: linear-gradient(180deg, rgb(255 165 0 / 28%), #650001);
+}
+.card-img-top {
+  padding: 5%;
+  width: 24%;
+}

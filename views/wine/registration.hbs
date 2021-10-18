@@ -1,0 +1,87 @@
+{{! <script defer src='/js/RegScript.js'></script> }}
+
+<div class='container'>
+  <div class='tablicka' style='width:  30%;'>
+    <form name='myForm' class='row g-3 needs-validation' novalidate>
+      <div class='col-md-4'>
+        <label for='validationCustom01' class='form-label' >First
+          name</label>
+        <input
+          data-name
+          type='text'
+          name='firstname'
+          class='form-control'
+          id='validationCustom01'
+          value='Mark'
+          required
+        />
+        <div class='valid-feedback'>
+          Looks good!
+        </div>
+      </div>
+      <div class='col-md-4'>
+        <label for='validationCustomUsername' class='form-label'>Email</label>
+        <div class='input-group has-validation'>
+          <span class='input-group-text' id='inputGroupPrepend'>@</span>
+          <input
+            data-email
+            type='text'
+            name='email'
+            class='form-control'
+            id='validationCustomUsername'
+            aria-describedby='inputGroupPrepend'
+            required
+          />
+          <div class='invalid-feedback'>
+            Please choose a Email.
+          </div>
+        </div>
+      </div>
+      <div class='col-md-4'>
+        <label for='validationCustom03' class='form-label'>Date of Birthday</label>
+        <input
+          data-date
+          type='text'
+          name='dateOfBirthday'
+          class='form-control'
+          id='validationCustom03'
+          placeholder='гггг-мм-дд'
+          required
+        />
+        <div class='invalid-feedback'>
+          Please provide a valid Date of Birthday.
+        </div>
+      </div>
+      <div class='col-md-4'>
+        <label for='validationCustom03' class='form-label'>Password</label>
+        <input
+          data-password
+          type='password'
+          name='password'
+          class='form-control'
+          id='validationCustom03'
+          required
+        />
+        <div class='invalid-feedback'>
+          Please provide a valid Password.
+        </div>
+      </div>
+
+      <div class='col-12'>
+        <button class='btn btn-primary' type='submit'>Submit form</button>
+      </div>
+      <p
+        data-reg
+        style='color: #86141d;
+    font-weight: bold;
+    background: #f9f3cb73;
+    border-radius: 5px;'
+      ></p>
+    </form>
+  </div>
+</div>
+<style>
+  .container{ display: flex; justify-content: center; align-items: center; width:
+  100%; } .col-md-4 { flex: 0 0 auto; width: 100%; } .row{ width:100% }.form-label{
+  color: #f9f3cb } .btn-primary{ background-color :#810000; border-color:#810000 }
+</style>

@@ -1,0 +1,26 @@
+<link rel='stylesheet' href='/stylesheet/index.css' type='text/css' />
+<div class='container'>
+
+  <div class='tablicka'>
+
+    {{#each set}}
+      <h3> <a class='nav-link' href='/wine/set'> {{this.event}} </a></h3>
+      <div class='row row-cols-1 row-cols-md-5 g-4'>
+        {{#each this.Wine}}
+          <div class='col'>
+            <br />
+            <div class='card'>
+
+              <img src='...' class='card-img-top' alt='...' />
+              <div class='card-body'>
+                <h5 class='card-title'>{{this.name}}</h5>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    {{/each}}
+
+  </div>
+
+</div>

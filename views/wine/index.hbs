@@ -1,0 +1,152 @@
+<link rel='stylesheet' href='index.css' type='text/css' />
+<div class='container'>
+
+  <div class='tablicka'>
+    <h3> <a class='nav-link' href='/wine/rec'> Наши сеты вин  </a></h3>
+    <div class='row row-cols-1 row-cols-md-5 g-4'>
+      <div class='col'>
+        <br />
+        <div class='card'>
+
+          <img src='...' class='card-img-top' alt='...' />
+          <div class='card-body'>
+            <h5 class='card-title'>Card title</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class='col'>
+        <br />
+
+        <div class='card'>
+          <img src='...' class='card-img-top' alt='...' />
+          <div class='card-body'>
+            <h5 class='card-title'>Card title</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class='col'>
+        <br />
+
+        <div class='card'>
+          <img src='...' class='card-img-top' alt='...' />
+          <div class='card-body'>
+            <h5 class='card-title'>Card title</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class='col'>
+        <br />
+
+        <div class='card'>
+          <img src='...' class='card-img-top' alt='...' />
+          <div class='card-body'>
+            <h5 class='card-title'>Card title</h5>
+
+          </div>
+        </div>
+
+      </div>
+      <div class='col'>
+        <br />
+
+        <div class='card'>
+          <img src='...' class='card-img-top' alt='...' />
+          <div class='card-body'>
+            <h5 class='card-title'>Card title</h5>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class='tablicka'>
+    <h3> <a class='nav-link' href='/wine'> Наш склад вин </a></h3>
+    <div class='row row-cols-1 row-cols-md-5 g-4'>
+      {{#each wine}}
+        <div class='col'>
+          <br />
+          <div class='card'>
+            <div height='200px'>
+              <img src={{this.sweet}} class='card-img-top' alt='...' />
+            </div>
+            <div class='card-body'>
+              <h5 class='card-title'>
+                <a class='nav-link' href='/wine/{{this.id}}'>{{this.name}}</a></h5>
+
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+  <div class='tablicka'>
+
+    <h3> <a class='nav-link' href='/wine/set'> Рекомендации </a></h3>
+    <div class='row row-cols-1 row-cols-md-5 g-4'>
+      <div class='col'>
+        <br />
+        <div class='card'>
+
+          <img src='...' class='card-img-top' alt='...' />
+          <div class='card-body'>
+            <h5 class='card-title'>Card title</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class='col'>
+        <br />
+
+        <div class='card'>
+          <img src='...' class='card-img-top' alt='...' />
+          <div class='card-body'>
+            <h5 class='card-title'>Card title</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class='col'>
+        <br />
+
+        <div class='card'>
+          <img src='...' class='card-img-top' alt='...' />
+          <div class='card-body'>
+            <h5 class='card-title'>Card title</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class='col'>
+        <br />
+
+        <div class='card'>
+          <img src='...' class='card-img-top' alt='...' />
+          <div class='card-body'>
+            <h5 class='card-title'>Card title</h5>
+
+          </div>
+        </div>
+
+      </div>
+      <div class='col'>
+        <br />
+
+        <div class='card'>
+          <img src='...' class='card-img-top' alt='...' />
+          <div class='card-body'>
+            <h5 class='card-title'>Card title</h5>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <br />
+</div>
